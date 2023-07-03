@@ -98,7 +98,8 @@
 .header_logo {
     text-transform: uppercase;
     text-decoration: none;
-    color:white;    font-size: 30px;
+    color:white;    
+    font-size: 30px;
     line-height: 1;
     font-weight: 700;
     letter-spacing: 2px;
@@ -134,7 +135,7 @@
     text-decoration: none;
 }
 
-#gs {
+.gs {
     color: #fff;
     background: #31a9e1;
     padding: 10px 20px;
@@ -150,7 +151,7 @@
 
 .home {
     display: flex;
-    padding: 60px 0;
+
     overflow: hidden;
     width: 100%;
     height: 80vh;
@@ -166,7 +167,12 @@
 }
 
 .home_left {
-    padding-left: 50px
+    padding-left: 50px;
+    width: 660px;
+    height: 545px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
@@ -188,8 +194,39 @@
     font-weight: bold;
 }
 
-.home_right {
+.home_nav {
+    justify-content: flex-start;
+    display: flex;
+}
+
+.home_nav > a {
+    text-decoration: none;
+
+}
+
+#gss {
+    margin: 0;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    margin: 1px 0 0 20px;
+    color: #fff;
     
+    
+}
+
+#video > i {
+    font-size: 32px;
+    margin-right: 8px;
+
+}
+
+.home_right {
+
 }
 
 .img_fluid {
@@ -198,4 +235,30 @@
     vertical-align: middle;
     overflow-clip-margin: content-box;
     overflow: clip;
+}
+
+.home_bottom {
+    display: flex;
+    height: 100px;
+    color: #444444;
+    overflow: hidden;
+
+}
+
+.bottom_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bottom_logo > img {
+    max-width: 45%;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 15px 0;
+    filter: grayscale(100);
 }
